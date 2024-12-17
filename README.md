@@ -39,17 +39,17 @@ PYTHON
        - excel
        - images
 
-main.py
+- main.py
 * 학습 및 테스트를 할 수 있는 코드
 
-testModel.py
+- testModel.py
 * test와 관련된 코드
 
-trainModel.py
+- trainModel.py
 * train과 관련된 코드
 
-loadData.py
+- loadData.py
 * train과 test에 따라 데이터를 불러오는 코드
 
-config.py
+- config.py
 * folder path, model save path 등 configuration
