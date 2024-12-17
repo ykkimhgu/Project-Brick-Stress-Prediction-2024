@@ -30,8 +30,13 @@ PYTHON
      - output
        - excel
        - images
-main.py\n
+
+main.py
+
 testModel.py
+
 trainModel.py
+
 loadData.py
+
 config.py
