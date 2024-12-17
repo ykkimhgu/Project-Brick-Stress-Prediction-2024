@@ -29,4 +29,9 @@ PYTHON
        - images 
      - output
        - excel
-       - images  
+       - images
+main.py
+testModel.py
+trainModel.py
+loadData.py
+config.py
