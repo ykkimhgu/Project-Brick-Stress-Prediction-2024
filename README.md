@@ -53,3 +53,4 @@ PYTHON
 
 - config.py
   * folder path, model save path 등 configuration
+ 
