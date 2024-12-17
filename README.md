@@ -32,11 +32,7 @@ PYTHON
        - images
 
 main.py
-
 testModel.py
-
 trainModel.py
-
 loadData.py
-
 config.py
