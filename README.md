@@ -1,7 +1,9 @@
 # Project-Brick-Stress-Prediction-2024
+* * *
+Author: Ji-Woo Yang
 
-## Process
-
+date: Updated 2024-12-17
+* * *
 ### 1. download .zip file
 
 ### 2. download train image % test image
