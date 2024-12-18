@@ -40,7 +40,7 @@ date: Updated 2024-12-18
 
 * 아나콘다 명령 프롬프트 실행
 
-<img src="images/prompt.png" style="zoom:80%;" />
+<img src="README_images/prompt.png" style="zoom:80%;" />
 
 * 아나콘다 업데이트
 
@@ -131,19 +131,19 @@ pip install numpy==1.21.5 pandas==1.3.5 matplotlib==3.5.3 scikit-image==0.19.3 s
 * **VS code** 실행
 * '**F1**' 키 누르고 **Select interpreter**  클릭
 
-<img src="images/Select interpreter.png" style="zoom:50%;" />
+<img src="README_images/Select interpreter.png" style="zoom:50%;" />
 
 * interpreter를 'brick_stress_predict'로 설정
 
-<img src="images/brick_stress_predict.png" style="zoom:50%;" />
+<img src="README_images/brick_stress_predict.png" style="zoom:50%;" />
 
 ### 4. 코드 실행
 
 (0) 폴더 선택 - 'Project-Brick-Stress-Prediction-2024-main'
 
-<img src="images/openfolder.png" style="zoom:70%;" />
+<img src="README_images/openfolder.png" style="zoom:70%;" />
 
-<img src="images/folder.png" style="zoom:50%;" />
+<img src="README_images/folder.png" style="zoom:50%;" />
 
 (1) main.py를 연다.
 
