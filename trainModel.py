@@ -1,11 +1,7 @@
 import pandas as pd
-
 import numpy as np
-from scipy.stats import kurtosis
-
 from config import *
 
-from skimage.filters import threshold_otsu
 
 from sklearn.feature_selection import RFECV
 from sklearn.tree import DecisionTreeRegressor
@@ -45,13 +41,12 @@ def trainOptimization(X_train_rfecv, y_train):
             n_jobs = 1                           # 병렬 처리
         )
 
-                # 최적의 하이퍼파라미터 탐색
+        # 최적의 하이퍼파라미터 탐색
         grid_search.fit(X_train_rfecv, y_train)
 
         # 최적의 파라미터와 성능 출력
         best_model = grid_search.best_estimator_
 
-        
         return  best_model
 
     except Exception as e:
