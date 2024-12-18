@@ -4,7 +4,7 @@
 
 Author: Ji-Woo Yang
 
-date: Updated 2024-12-17
+date: Updated 2024-12-18
 
 ***
 
@@ -42,6 +42,11 @@ date: Updated 2024-12-17
 
 * loadData.py: Train 및 Test 입력 데이터 로드 코드
 
+* scaler.save: 학습 시 입력 데이터의 최소/최대값이 저장된 스케일러
+
+  * 학습시 자동 업데이터 됨
+  * 데이터 정규화 시 사용됨
+  
   
 
 ## 2. 실행 가이드
@@ -52,7 +57,7 @@ date: Updated 2024-12-17
 
 ### 2) 이미지 데이터 다운로드
 
-아래 링크로 들어가서 이미지 데이터를 다운로드 받고 해당 경로에 이미지 파일 저장
+아래 링크로 들어가서 이미지 데이터를 다운로드 받고 해당 경로에 이미지 데이터 저장
 
 링크: [이미지 데이터](https://drive.google.com/drive/folders/1Nnqhqnq9fs8fZnSt1rJrb2SXsN8T9k7W?usp=drive_link)
 
@@ -61,7 +66,7 @@ date: Updated 2024-12-17
 * train_images : data/train/input/images
 * test_images : data/test/input/images
 
-
+  * **각 images 폴더에는 이미지 데이터가 들어있어 함.**
 
 ### 3) 코드 실행
 
@@ -108,7 +113,7 @@ date: Updated 2024-12-17
 
 
 
-## 3. 필요한 라이브러리
+## 3. 필요한 파이썬 패키지
 
 * pandas
 * numpy
@@ -119,3 +124,11 @@ date: Updated 2024-12-17
 * seaborn
 * joblib
 * openpyxl
+
+## 4. 구동환경
+
+프로그램 언어: Python 3.12.4
+
+IDE/Compiler: Visual Studio code
+
+OS: Window 11
