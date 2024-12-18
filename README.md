@@ -12,6 +12,8 @@ date: Updated 2024-12-18
 
 이 코드는 링크 3.0 기업현안문제 해결 과제 '벽돌 압축강도 예측 가능성 검토' 를 진행하며, 작성한 코드로 '(주)삼정산업'에서 이미지와 재료 구성데이터로 학습 및 테스트를 할 수 있도록 공유하기 위해 작성된 코드입니다.
 
+
+
 ## I. 설치 및 구동 최소사양
 
 ### Software
@@ -139,37 +141,34 @@ pip install numpy==1.21.5 pandas==1.3.5 matplotlib==3.5.3 scikit-image==0.19.3 s
 
 ### 4. 코드 실행
 
-(0) 폴더 선택 - 'Project-Brick-Stress-Prediction-2024-main'
+* 폴더 선택 - 'Project-Brick-Stress-Prediction-2024-main'
 
 <img src="README_images/openfolder.png" style="zoom:70%;" />
 
 <img src="README_images/folder.png" style="zoom:50%;" />
 
-(1) main.py를 연다.
+* main.py를 연다.
 
-(2) config.py 에서 mode 설정을 한다
+* config.py 에서 mode 설정을 한다
+  * mode = 'train' or 'test'
 
-* mode = 'train' or 'test'
+* main.py로 돌아가 코드 실행
+  * train mode
 
-(3) main.py로 돌아가 코드 실행
+    * 학습이 진행
+    * 학습된 모델이 파일에 저장(저장경로: train/output/model)
+    * 모델 성능 터미널 출력 
 
-* train mode
+  * test mode
 
-  * 학습이 진행
-  * 학습된 모델이 파일에 저장(저장경로: train/output/model)
-  * 모델 성능 터미널 출력 
+    * 학습된 모델과 테스트 데이터를 불러와 테스트 진행
+      * 학습된 모델을 불러올때는 config.py의 test_model_path에서 저장된 모델 이름으로 수정 필요
 
-* test mode
-
-  * 학습된 모델과 테스트 데이터를 불러와 테스트 진행
-
-    * 학습된 모델을 불러올때는 config.py의 test_model_path에서 저장된 모델 이름으로 수정 필요
-
-  * 테스트 결과는 test/output 파일에 저장됨
+    * 테스트 결과는 test/output 파일에 저장됨
 
     
 
-### 4. 기타
+### 5. 기타
 
 * 새로운 데이터 학습할 경우
   * data/train/input/excel로 이동
