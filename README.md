@@ -8,13 +8,67 @@ date: Updated 2024-12-18
 
 ***
 
-# Introduction
+# 소개
 
 이 코드는 링크 3.0 기업현안문제 해결 과제 '벽돌 압축강도 예측 가능성 검토' 를 진행하며, 작성한 코드로 '(주)삼정산업'에서 이미지와 재료 구성데이터로 학습 및 테스트를 할 수 있도록 공유하기 위해 작성된 코드입니다.
 
+## I. 설치 및 구동 최소사양
+
+### Software
+
+* Window 11
+* Python 3.7.1
+* numpy 1.21.5
+* pandas 1.3.5
+* matplotlib 3.5.3
+* scikit-image 0.19.3
+* scikit-learn 1.0.2
+* opencv-python 4.10.0.84
+* seaborn 0.12.2
+* joblib 1.3.2
+* openpyxl 3.1.3
+
+## II. 설치 가이드
+
+### 1. 필수 프로그램 설치
+
+* 아래 링크 접속 후 '프로그램' 폴더에서 **Anaconda** 및  **Visual Studio Code** 설치
+
+  링크:[프로그램 설치 링크](https://drive.google.com/drive/folders/17hETWHocpstpEn11QRXIgFDLfs2KH_nA?usp=sharing)
+
+### 2. 아나콘다 가상환경 설치
+
+* 아나콘다 명령 프롬프트 실행
+
+<img src="images/prompt.png" style="zoom:80%;" />
+
+* 아나콘다 업데이트
+
+```bash
+conda update -n base -c defaults conda
+```
+
+* Python 3.12에 대한 가상환경 생성
+
+```bash
+conda create -n brick_stress_predict python=3.7.1
+```
+
+* 가상환경 활성화
+
+```bash
+conda activate brick_stress_predict
+```
+
+* 필요 라이브러리 설치
+
+```bash
+pip install numpy==1.21.5 pandas==1.3.5 matplotlib==3.5.3 scikit-image==0.19.3 scikit-learn==1.0.2 opencv-python==4.10.0.84 seaborn==0.12.2 joblib==1.3.2 openpyxl==3.1.3
+```
 
 
-## 1. 구성
+
+## III. 구성
 
 * data: train과 test를 위한 입/출력 데이터
 
@@ -49,13 +103,17 @@ date: Updated 2024-12-18
   
   
 
-## 2. 실행 가이드
+## IV. 실행 가이드
 
-### 1)  전체 .zip file 다운로드
+### 0. 준비사항
+
+* 제공 소프트웨어 설치된 PC
+
+### 1.  전체 .zip file 다운로드
 
 깃허브의 레포지토리에 대한 .zip file을 다운로드 후 압축 풀기
 
-### 2) 이미지 데이터 다운로드
+### 2. 이미지 데이터 다운로드
 
 아래 링크로 들어가서 이미지 데이터를 다운로드 받고 해당 경로에 이미지 데이터 저장
 
@@ -68,7 +126,24 @@ date: Updated 2024-12-18
 
   * **각 images 폴더에는 이미지 데이터가 들어있어 함.**
 
-### 3) 코드 실행
+### 3. VS code interpreter 변경
+
+* **VS code** 실행
+* '**F1**' 키 누르고 **Select interpreter**  클릭
+
+<img src="images/Select interpreter.png" style="zoom:50%;" />
+
+* interpreter를 'brick_stress_predict'로 설정
+
+<img src="images/brick_stress_predict.png" style="zoom:50%;" />
+
+### 4. 코드 실행
+
+(0) 폴더 선택 - 'Project-Brick-Stress-Prediction-2024-main'
+
+<img src="images/openfolder.png" style="zoom:70%;" />
+
+<img src="images/folder.png" style="zoom:50%;" />
 
 (1) main.py를 연다.
 
@@ -94,7 +169,7 @@ date: Updated 2024-12-18
 
     
 
-### 4) 기타
+### 4. 기타
 
 * 새로운 데이터 학습할 경우
   * data/train/input/excel로 이동
@@ -111,24 +186,3 @@ date: Updated 2024-12-18
   * data/test/input/images로 이동
     * 학습때와 동일
 
-
-
-## 3. 필요한 파이썬 패키지
-
-* pandas
-* numpy
-* scikit-image
-* opencv-python
-* scikit-learn
-* matplotlib
-* seaborn
-* joblib
-* openpyxl
-
-## 4. 구동환경
-
-프로그램 언어: Python 3.12.4
-
-IDE/Compiler: Visual Studio code
-
-OS: Window 11
