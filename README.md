@@ -1,4 +1,4 @@
-# Project
+# 콘크리트 벽돌의 재료 구성 및 벽돌 표면 이미지와 압축강도의 상관관계 및 압축강도 예측 모델 가능성 검토 - 코드 배포
 
 ***
 
@@ -150,8 +150,9 @@ pip install numpy==1.21.5 pandas==1.3.5 matplotlib==3.5.3 scikit-image==0.19.3 s
 * main.py를 연다.
 
 * config.py 에서 mode 설정을 한다
-  * mode = 'train' or 'test'
-
+  
+* mode = 'train' or 'test'
+  
 * main.py로 돌아가 코드 실행
   * train mode
 
