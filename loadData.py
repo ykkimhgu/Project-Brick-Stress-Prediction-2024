@@ -6,7 +6,6 @@ from scipy.stats import kurtosis
 import os
 
 from skimage.feature import graycomatrix, graycoprops
-from skimage.color import rgb2gray
 from skimage.filters import threshold_otsu
 from scipy.stats import skew, kurtosis
 from sklearn.preprocessing import MinMaxScaler
@@ -32,8 +31,6 @@ def load_excel_data(file_path, mode):
             return brick_num, comp_brick, fc
         elif mode == "test":
             return brick_num, comp_brick
-        
-
         
     except Exception as e:
         print(f"Error loading Excel file: {e}")
@@ -99,10 +96,9 @@ def LoadProcessingImage(brick_num, folder_path):
                 # 이진화 처리
                 threshold   = threshold_otsu(gBrick)  # Otsu threshold
                 binary_img  = gBrick > threshold
-                
+
                 # 공극계산
                 stat_features["numair"][0, j] = np.sum(binary_img == 0) / (col * row)
-                
 
                 img_normalized = (gBrick - gBrick.min()) / (gBrick.max() - gBrick.min()) * 7  # 픽셀 값을 0~7로 정규화
                 img_normalized = img_normalized.astype(np.uint8) 
@@ -179,7 +175,7 @@ def data_load(excel_path, image_path, mode):
         elif mode == "test":
             scaler      = load('scaler.save')
             X_norm      = scaler.transform(comp_brick)
-            return X_norm
+            return X_norm, comp_brick
         
     except Exception as e:
         print(f"Error loading Excel file: {e}")
