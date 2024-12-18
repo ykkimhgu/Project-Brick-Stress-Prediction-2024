@@ -29,7 +29,7 @@ def modelResult_test(model, x_test, comp_brick):
         
         out = {
             '항목': ['벽돌번호', '공극률[%]', '압축강도[MPa]'],
-            **{f'열_{i+1}': [str(columns[i]), str(comp_brick[i, 11]), str(y_pred[i])] for i in range(length)}
+            **{f'열_{i+1}': [str(columns[i]), str(comp_brick[i, 11]*100), str(y_pred[i])] for i in range(length)}
         }
 
         df = pd.DataFrame(out)
