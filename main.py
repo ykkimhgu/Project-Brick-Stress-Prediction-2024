@@ -1,7 +1,7 @@
 #---------------------------------------------------------------------------------------#
 # Department of Mechanical & Control Engineering in Handong Global University
 # Affiliation   : Industrial Intelligence LAB
-# Data          : 2024-24-18 (wed)
+# Data          : 2024-12-20 (Fri)
 # Author        : Yang Ji-Woo
 #---------------------------------------------------------------------------------------#
 from config import *
